@@ -1,0 +1,10 @@
+body {
+  padding-top: 56px;
+}
+
+.header1 {
+  background-image: url("../images/daiga-ellaby-699140-unsplash.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-attachment: fixed;
+}
