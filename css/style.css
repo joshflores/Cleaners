@@ -4,9 +4,9 @@ body {
 
 .header1 {
   background-image: url("../images/heather-ford-1270604-unsplash.jpg");
-  background-position: center;
+  background-position: bottom;
   background-repeat: none;
-  background-attachment: fixed;
+  background-attachment: absolute;
 }
 .socials {
   font-size: 30px;
