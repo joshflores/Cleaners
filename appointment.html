@@ -77,59 +77,72 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<form>
-  <div class="form-group row">
-    <label for="name" class="col-4 col-form-label">Name</label> 
-    <div class="col-8">
-      <input id="name" name="name" placeholder="Ex: Megan Foster" type="text" class="form-control">
+<div class="appointment">
+        <div class="container">
+            <form id="appointment-form">
+                <div class="form-group row">
+                    <label for="name" class="col-4 col-form-label">Name</label>
+                    <div class="col-8">
+                        <input id="name" name="name" placeholder="Ex: Megan Foster" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="address" class="col-4 col-form-label">Address</label>
+                    <div class="col-8">
+                        <input id="address" name="address"
+                            placeholder="Ex: 123 Example St, Los Angeles California, Apt #12A. We only service Central Los Angeles!"
+                            type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="text3" class="col-4 col-form-label">Zip Code</label>
+                    <div class="col-8">
+                        <input id="text3" name="text3" placeholder="Ex: 90048" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="service_type" class="col-4 col-form-label">Service Type</label>
+                    <div class="col-8">
+                        <textarea id="service_type" name="service_type" cols="40" rows="5"
+                            aria-describedby="service_typeHelpBlock" class="form-control"></textarea>
+                        <span id="service_typeHelpBlock" class="form-text text-muted">Ex: We'd like 2 bathrooms, 2
+                            bedrooms, and 1
+                            kitchen. The maid should arrive at 10:00 AM and leave at 1:00 PM. Please have her lock up on
+                            her way out. Thank
+                            You!</span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="phone_number" class="col-4 col-form-label">Phone Number</label>
+                    <div class="col-8">
+                        <input id="phone_number" name="phone_number" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-4">Contact Options</label>
+                    <div class="col-8">
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input"
+                                value="text" aria-describedby="checkboxHelpBlock">
+                            <label for="checkbox_0" class="custom-control-label">Text</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input"
+                                value="call" aria-describedby="checkboxHelpBlock">
+                            <label for="checkbox_1" class="custom-control-label">Call</label>
+                        </div>
+                        <span id="checkboxHelpBlock" class="form-text text-muted">How would you likes us to contact you?
+                            (Choose at least one)</span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-4 col-8">
+                        <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-  </div>
-  <div class="form-group row">
-    <label for="address" class="col-4 col-form-label">Address</label> 
-    <div class="col-8">
-      <input id="address" name="address" placeholder="Ex: 123 Example St, Los Angeles California, Apt #12A. We only service Central Los Angeles!" type="text" class="form-control">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="text3" class="col-4 col-form-label">Zip Code</label> 
-    <div class="col-8">
-      <input id="text3" name="text3" placeholder="Ex: 90048" type="text" class="form-control">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="service_type" class="col-4 col-form-label">Service Type</label> 
-    <div class="col-8">
-      <textarea id="service_type" name="service_type" cols="40" rows="5" aria-describedby="service_typeHelpBlock" class="form-control"></textarea> 
-      <span id="service_typeHelpBlock" class="form-text text-muted">Ex: We'd like 2 bathrooms, 2 bedrooms, and 1 kitchen. The maid should arrive at 10:00 AM and leave at 1:00 PM. Please have her lock up on her way out. Thank You!</span>
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="phone_number" class="col-4 col-form-label">Phone Number</label> 
-    <div class="col-8">
-      <input id="phone_number" name="phone_number" type="text" class="form-control">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label class="col-4">Options (Choose at least one)</label> 
-    <div class="col-8">
-      <div class="custom-control custom-checkbox custom-control-inline">
-        <input name="contact_type" id="contact_type_0" type="checkbox" aria-describedby="contact_typeHelpBlock" class="custom-control-input" value="text"> 
-        <label for="contact_type_0" class="custom-control-label">Text</label>
-      </div>
-      <div class="custom-control custom-checkbox custom-control-inline">
-        <input name="contact_type" id="contact_type_1" type="checkbox" aria-describedby="contact_typeHelpBlock" class="custom-control-input" value="call"> 
-        <label for="contact_type_1" class="custom-control-label">Call</label>
-      </div> 
-      <span id="contact_typeHelpBlock" class="form-text text-muted">How would you likes us to contact you? You can choose both if you like.</span>
-    </div>
-  </div> 
-  <div class="form-group row">
-    <div class="offset-4 col-8">
-      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-    </div>
-  </div>
-</form>
-
 
 
 
